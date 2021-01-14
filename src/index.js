@@ -18,13 +18,18 @@ function loginClick(){
   if (username.value !== "" && password.value !== ""){
     if(admins.includes(username.value.toLowerCase())){
       if(details[username.value.toLowerCase()] === password.value){
-        alert("memes");
         //client.channels.get('742121910976118864').send('Hello here!');
-        
+        good_login();
       }
     }
   }
 }
+
+function good_login() {
+  alert("memes");
+}
+
+
 login.addEventListener("click",loginClick);
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
